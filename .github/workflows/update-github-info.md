@@ -30,7 +30,10 @@ Use these sources:
 - GitHub Changelog: https://github.blog/changelog/
 - Awesome Copilot workflows: https://awesome-copilot.github.com/workflows/
 
-Web fetch https://awesome-copilot.github.com/workflows/.
+Use the `web-fetch` tool to retrieve each of the three URLs above. Do not use
+`curl`, `wget`, or any other shell/bash command to fetch them — shell-based
+network requests are blocked in this sandbox and will fail with a permission
+error. Only the dedicated `web-fetch` tool has network access.
 
 Update `site/content/github-info.md` with concise,
 practical updates for readers and include source context when content comes
